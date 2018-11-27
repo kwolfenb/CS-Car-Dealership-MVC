@@ -1,0 +1,17 @@
+@using CarDealership.Models;
+
+<h1>Cars List</h1>
+
+@foreach(Car car in Model)
+{
+<p>Price: @car.GetPrice()</p>
+<p>Miles: @car.GetMiles()</p>
+<p>car Model and Make: @car.GetMakeModel()</p>
+
+}
+
+<ul>
+
+
+</ul>
+<a href="/newcar">Add a new car.</a>
